@@ -7,7 +7,7 @@ terraform {
 }
 data "aws_instance" "instance" {
   instance_id = "i-016119378528ef465"
-}
+}                                              #if public ip changes when i stop and start instahnces, if there is any change to github from local system i am goint to push code from dev pc if any time he push the code to github forwarded url should trigger to jenkins
 
 resource "aws_route53_record" "jenkins" {
   name    = "jenkins.rdevopsb72online.online"
