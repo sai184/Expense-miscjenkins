@@ -16,3 +16,5 @@ resource "aws_route53_record" "jenkins" {
   records = [data.aws_instance.instance.public_ip]
   ttl = 10
 }
+
+#in companies no need this it has enetrpse gihubs acces private ips they will accsss
